@@ -9,6 +9,12 @@ body {
 	margin: 0 auto;
 }
 
+#flash_notice {
+	padding: 20px 30px;
+	background-color: #f77;
+	border: 1px solid #700;
+}
+
 fieldset {
 	margin: 20px 0;
 	padding: 20px;
@@ -36,3 +42,8 @@ input[type=submit] {
 		color: #000;
 	}
 
+#result {
+	padding: 20px 30px;
+	background-color: #7f7;
+	border: 1px solid #070;
+}

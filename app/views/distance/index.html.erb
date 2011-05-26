@@ -1,20 +1,24 @@
 <h1>Find Distance</h1>
 
-<form action="distance/index" method="get">
+<form action="<%= distance_calc_path %>" method="post">
 	<fieldset>
 		<legend>Point 1</legend>
 		<label for="lat1">Lat: </label>
-		<input type="text" id="lat1" name="lat1" value="" />
+		<input type="text" id="lat1" name="lat1" value="36.106381" />
 		<label for="lng1">Lng: </label>
-		<input type="text" id="lng1" name="lng1" value="" />
+		<input type="text" id="lng1" name="lng1" value="-95.929785" />
 	</fieldset>
 	<fieldset>
 		<legend>Point 2</legend>
 		<label for="lat2">Lat: </label>
-		<input type="text" id="lat2" name="lat2" value="" />
+		<input type="text" id="lat2" name="lat2" value="36.147734" />
 		<label for="lng2">Lng: </label>
-		<input type="text" id="lng2" name="lng2" value="" />
+		<input type="text" id="lng2" name="lng2" value="-95.986369" />
 	</fieldset>
+	
+	<% if params[:result] %>
+		<p id="result"><%= params[:result] %></p>
+	<% end %>
 
 	<input type="submit" value="Find Distance" />
 </form>

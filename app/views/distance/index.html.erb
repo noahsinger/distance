@@ -3,17 +3,25 @@
 <form action="<%= distance_calc_path %>" method="post">
 	<fieldset>
 		<legend>Point 1</legend>
-		<label for="lat1">Lat: </label>
-		<input type="text" id="lat1" name="lat1" value="36.106381" />
-		<label for="lng1">Lng: </label>
-		<input type="text" id="lng1" name="lng1" value="-95.929785" />
+		<p>
+			<label for="lat1">Lat: </label>
+			<input type="text" id="lat1" name="lat1" value="36.106381" />
+		</p>
+		<p>
+			<label for="lng1">Lng: </label>
+			<input type="text" id="lng1" name="lng1" value="-95.929785" />
+		</p>
 	</fieldset>
 	<fieldset>
 		<legend>Point 2</legend>
-		<label for="lat2">Lat: </label>
-		<input type="text" id="lat2" name="lat2" value="36.147734" />
-		<label for="lng2">Lng: </label>
-		<input type="text" id="lng2" name="lng2" value="-95.986369" />
+		<p>
+			<label for="lat2">Lat: </label>
+			<input type="text" id="lat2" name="lat2" value="36.147734" />
+		</p>
+		<p>
+			<label for="lng2">Lng: </label>
+			<input type="text" id="lng2" name="lng2" value="-95.986369" />
+		</p>
 	</fieldset>
 	
 	<% if params[:result] %>
